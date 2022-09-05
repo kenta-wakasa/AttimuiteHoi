@@ -27,6 +27,8 @@ class AttimuiteHoi extends StatefulWidget {
 
 class _AttimuiteHoiState extends State<AttimuiteHoi> {
   int winCounter = 0;
+
+  /// succes　-> success かな?
   int succesCounter = 0;
   int maxCounter = 0;
   String myHand = '👆';
