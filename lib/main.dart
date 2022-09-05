@@ -36,6 +36,10 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
   String computerHand = '👆';
   String result = '';
 
+  /// ゲーム続行中は isPlaying が true となる
+  /// このように書くと意味が理解しやすい
+  bool get isPlaying => result != 'あかん、、残念！';
+
   void selectHand(String selectedHand) {
     if (result == 'ええ調子や！' || result == '') {
       myHand = selectedHand;
