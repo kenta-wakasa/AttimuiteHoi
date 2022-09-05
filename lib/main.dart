@@ -41,7 +41,8 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
   bool get isPlaying => result != 'あかん、、残念！';
 
   void selectHand(String selectedHand) {
-    if (result == 'ええ調子や！' || result == '') {
+    // ここを result == 'ええ調子や！' || result == '' から変更
+    if (isPlaying) {
       myHand = selectedHand;
       generateComputerHand();
       judge();
