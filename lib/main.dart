@@ -96,17 +96,17 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text(
-            'そっち指差しちゃあかんのよ！',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            ),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text(
+          'そっち指差しちゃあかんのよ！',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
           ),
         ),
-        body: Center(
-            child: Column(
+      ),
+      body: Center(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
@@ -198,36 +198,44 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {
-                    selectHand('👆');
-                  },
+                  onPressed: isPlaying
+                      ? () {
+                          selectHand('👆');
+                        }
+                      : null,
                   child: const Text(
                     '👆',
                     style: TextStyle(fontSize: 25),
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {
-                    selectHand('👉');
-                  },
+                  onPressed: isPlaying
+                      ? () {
+                          selectHand('👉');
+                        }
+                      : null,
                   child: const Text(
                     '👉',
                     style: TextStyle(fontSize: 25),
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {
-                    selectHand('👈');
-                  },
+                  onPressed: isPlaying
+                      ? () {
+                          selectHand('👈');
+                        }
+                      : null,
                   child: const Text(
                     '👈',
                     style: TextStyle(fontSize: 25),
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {
-                    selectHand('👇');
-                  },
+                  onPressed: isPlaying
+                      ? () {
+                          selectHand('👇');
+                        }
+                      : null,
                   child: const Text(
                     '👇',
                     style: TextStyle(fontSize: 25),
@@ -258,6 +266,8 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
                 ],
               ),
           ],
-        )));
+        ),
+      ),
+    );
   }
 }
