@@ -29,6 +29,7 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
   int winCounter = 0;
 
   /// succes　-> success かな?
+  /// 5回連勝の達成回数を記録しようとしていてよい！
   int succesCounter = 0;
   int maxCounter = 0;
   String myHand = '👆';
