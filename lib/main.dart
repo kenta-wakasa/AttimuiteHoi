@@ -198,6 +198,7 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
+                  // ボタンを押しても意味がない時は非活性にしたほうが良い
                   onPressed: isPlaying
                       ? () {
                           selectHand('👆');
@@ -209,6 +210,7 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
                   ),
                 ),
                 ElevatedButton(
+                  // ボタンを押しても意味がない時は非活性にしたほうが良い
                   onPressed: isPlaying
                       ? () {
                           selectHand('👉');
@@ -220,6 +222,7 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
                   ),
                 ),
                 ElevatedButton(
+                  // ボタンを押しても意味がない時は非活性にしたほうが良い
                   onPressed: isPlaying
                       ? () {
                           selectHand('👈');
@@ -231,6 +234,7 @@ class _AttimuiteHoiState extends State<AttimuiteHoi> {
                   ),
                 ),
                 ElevatedButton(
+                  // ボタンを押しても意味がない時は非活性にしたほうが良い
                   onPressed: isPlaying
                       ? () {
                           selectHand('👇');
